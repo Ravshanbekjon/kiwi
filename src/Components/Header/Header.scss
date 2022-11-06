@@ -1,0 +1,43 @@
+.header__nav {
+    box-shadow: 0 0 15px rgb(227, 227, 227);
+
+    h5 {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        color: #000000;
+        max-width: 160px;
+    }
+
+    .NavLink {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        text-decoration: none;
+        margin-left: 10px;
+        margin: 5px 0 5px 10px;
+        border: none;
+        background: none;
+        text-align: left;
+    }
+
+    .me-auto {
+        margin: 0 15px;
+
+        select {
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-weight: bolder;
+        }
+    }
+
+    .links-1 {
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

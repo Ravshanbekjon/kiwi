@@ -1,0 +1,197 @@
+.single__product {
+    margin: 2rem auto;
+    .single__top {
+        margin-bottom: 20px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 120%;
+            color: #414D6A;
+            max-width: 1000px;
+        }
+    }
+
+    .single__pages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .pages {
+            width: 50%;
+            padding: 1rem;
+
+            h3 {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 120%;
+                letter-spacing: -0.00016833px;
+                color: #444444;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: -5.89154e-05px;
+                text-decoration-line: underline;
+                color: #4E72CA;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 150%;
+                letter-spacing: -3.85217e-05px;
+                color: #414D6A;
+                margin: 1rem 0;
+            }
+
+            .buttons {
+                margin: 1rem 0;
+
+                button {
+                    padding: 6px 15px;
+                    margin-right: 8px;
+                    border: none;
+                    background: #304FFF;
+                    border-radius: 23.5px;
+                    color: #fff;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .pages:first-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .images {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                img {
+                    min-width: 100px;
+                    max-height: 100px;
+                }
+            }
+
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+    }
+
+    .home__top {
+        border-bottom: 1px solid #D5D5D5;
+        padding: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        .home__top-links {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: #9B9B9B;
+            text-decoration: none;
+            padding: 0.80rem 0;
+            margin-right: 20px;
+        }
+
+        .home__top-links:first-child {
+            font-weight: 900;
+            line-height: 30px;
+            color: #4E72CA;
+            border-bottom: 2px solid #4E72CA;
+        }
+    }
+
+    .home__card {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .single__product {
+        .home__top {
+            .home__top-links {
+                font-size: 20px;
+            }
+        }
+
+        .item {
+            width: 30%;
+        }
+
+        .single__top {
+            h2 {
+                font-size: 23px;
+            }
+        }
+
+        .single__pages {
+            .pages {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .single__product {
+        .home__top {
+            .home__top-links {
+                font-size: 16px;
+            }
+        }
+
+        .item {
+            width: 48%;
+        }
+
+        .single__top {
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .single__pages {
+            .pages {
+                width: 100%;
+                .buttons {
+                    button {
+                        font-size: 14px;
+                        margin-right: 5px;
+                        padding: 4px 6px;
+                    }
+                }
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .pages:first-child {
+                .images {
+                    img {
+                        min-width: 50px;
+                        min-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
